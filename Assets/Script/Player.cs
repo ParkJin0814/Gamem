@@ -6,97 +6,129 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject[] Direction;
-    //스파인 애니메이션
-    public SkeletonAnimation[] skeletonAnimation;
+    public SkeletonAnimation Pajama;    
+    public SkeletonDataAsset[] Data;
+    //스파인 애니메이션    
     public AnimationReferenceAsset[] SideAnimClip;
     public AnimationReferenceAsset[] FrontAnimClip;
     public AnimationReferenceAsset[] BackAnimClip;
+
+    public enum PlayerView
+    {
+        BACK, FRONT, SIDE
+    }
+    private PlayerView _playerView=PlayerView.SIDE;
     public enum AnimState
     {
         IDLE, WALK, RUN
-    }
-    public int a = 0;
+    }    
     //현재 애니메이션 스테이트
     private AnimState _AnimState= AnimState.IDLE;
         
-    private int CurrentAnimation;
-
-    public bool MovingCheck = false;
-    bool RightCheck=true;
-    void ChangeState(AnimState s)
+    private string CurrentAnimation;
+    private Rigidbody rig;
+    float x;
+    float y;
+    private void Awake()
     {
-        if(s==_AnimState) return;
-        _AnimState = s;
-        switch(s)
-        {
-            case AnimState.IDLE:
-                break;
-        }
+        rig=GetComponent<Rigidbody>();
     }
     void Start()
     {
-        SetCurrentAnimation(_AnimState, SideAnimClip, 2);
+        //SetCurrentAnimation(_AnimState, 2);
     }
-
     void Update()
     {
         Movement();
-    }    
-    void _AsncAnimation(AnimationReferenceAsset animClip,bool loop,int a)
-    {
-        if (CurrentAnimation.Equals((int)_AnimState)) return; // 동일한 애니메이션은 리턴
-
-        skeletonAnimation[a].state.SetAnimation(0,animClip,loop); //해당애니메이션으로 실행
-        CurrentAnimation= (int)_AnimState;
     }
-    void SetCurrentAnimation(AnimState _state, AnimationReferenceAsset[] AnimClip,int a)
+    private void FixedUpdate()
     {
-        _AsncAnimation(AnimClip[(int)_state], true, a);
+        rig.velocity = new Vector3(x*100*Time.deltaTime,0,y*100*Time.deltaTime);
     }
-
+    void _AsncAnimation(AnimationReferenceAsset animClip,bool loop,float timeScale=1.0f)
+    {
+        // 동일한 애니메이션은 리턴
+        if (animClip.name.Equals(CurrentAnimation)) 
+            return;
+        //해당애니메이션으로 실행
+        Pajama.state.SetAnimation(0,animClip,loop).TimeScale= timeScale; 
+        Pajama.loop=loop;
+        Pajama.timeScale = timeScale;
+        //현재 재생되고 있는 애니메이션 이름으로 변경
+        CurrentAnimation= animClip.name;
+    }
+    AnimationReferenceAsset[] AnimClip;
+    void SetCurrentAnimation(AnimState _state)
+    {        
+        switch ((int)_playerView)
+        {
+            case 0:
+                AnimClip = BackAnimClip;
+                break;
+            case 1:
+                AnimClip = FrontAnimClip;
+                break;
+            case 2:
+                AnimClip = SideAnimClip;
+                break;
+        }
+        switch(_state)
+        {
+            case AnimState.IDLE:
+                _AsncAnimation(AnimClip[(int)AnimState.IDLE], true);
+                break;
+            case AnimState.WALK:
+                _AsncAnimation(AnimClip[(int)AnimState.WALK], true);
+                break;
+            case AnimState.RUN:
+                break;
+        }        
+    }
     void Movement()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
-        if (!Mathf.Approximately(x, 0.0f))
+        x = Input.GetAxisRaw("Horizontal");
+        y = Input.GetAxisRaw("Vertical");
+        if (!Mathf.Approximately(x, 0.0f)|| !Mathf.Approximately(y, 0.0f))
         {
+            //ChangeState(AnimState.WALK);
             _AnimState = AnimState.WALK;
-            if (!MovingCheck)
+            
+            if (y > 0.0f)
             {
-                SetCurrentAnimation(_AnimState, SideAnimClip, 2);
-                MovingCheck = true;
-            }
-            if (x > 0.0f)
-            {                
-                if (!RightCheck) Direction[2].transform.Rotate(0, 180, 0);
-                RightCheck = true;
-                DirectionCheck(2);
-                
+                Pajama.skeletonDataAsset = Data[0];
+                Pajama.Initialize(true);                
             }
             else
             {
-                if (RightCheck) Direction[2].transform.Rotate(0, 180, 0);
-                RightCheck = false;
-                DirectionCheck(2);           
-            }            
+                if (!Mathf.Approximately(x, 0.0f))
+                {
+                    Pajama.skeletonDataAsset = Data[2];
+                    Pajama.Initialize(true);
+                    transform.localScale = new Vector3(x, 1, 1);
+                    if (x > 0.0f)
+                    {
+                     
+                        //애니메이션
+                        
+                    }
+                    else
+                    {                       
+                        
+                    }
+                }
+                else
+                {
+                    Pajama.skeletonDataAsset = Data[1];
+                    Pajama.Initialize(true);                    
+                }
+            }
         }
         else
         {
-            _AnimState = AnimState.IDLE;
-            MovingCheck = false;
-            if (Direction[0].activeSelf) SetCurrentAnimation(_AnimState, BackAnimClip, 0);
-            if (Direction[1].activeSelf) SetCurrentAnimation(_AnimState, FrontAnimClip, 1);
-            if (Direction[2].activeSelf) SetCurrentAnimation(_AnimState, SideAnimClip, 2);
+            //ChangeState(AnimState.IDLE);
+            _AnimState = AnimState.IDLE;            
         }
+        SetCurrentAnimation(_AnimState);
     }
-    void DirectionCheck(int a)
-    {
-        foreach(GameObject go in Direction)
-        {
-            go.SetActive(false);
-        }
-        Direction[a].SetActive(true);
-        
-    }
+    
 }
