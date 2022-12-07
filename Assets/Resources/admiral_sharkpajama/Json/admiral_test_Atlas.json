@@ -1,0 +1,22 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2861956063985135401
+  },
+  "m_Name": "admiral_test_Atlas",
+  "atlasFile": {
+    "m_FileID": 0,
+    "m_PathID": -3802520192924565988
+  },
+  "materials": [
+    {
+      "m_FileID": 0,
+      "m_PathID": -5767729467553401254
+    }
+  ]
+}

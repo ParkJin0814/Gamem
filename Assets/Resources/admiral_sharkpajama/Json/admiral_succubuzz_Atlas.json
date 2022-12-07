@@ -1,0 +1,22 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2861956063985135401
+  },
+  "m_Name": "admiral_succubuzz_Atlas",
+  "atlasFile": {
+    "m_FileID": 0,
+    "m_PathID": 1541162559939818092
+  },
+  "materials": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 5809249307179091828
+    }
+  ]
+}

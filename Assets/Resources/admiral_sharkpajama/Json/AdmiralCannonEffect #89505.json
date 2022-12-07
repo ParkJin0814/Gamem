@@ -1,0 +1,26 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 4413974982775011737
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -5081869887108031783
+  },
+  "m_Name": "",
+  "fireDuration": 0.5,
+  "muzzleTransform": {
+    "m_FileID": 0,
+    "m_PathID": -2208332800270598040
+  },
+  "fireTransform": {
+    "m_FileID": 0,
+    "m_PathID": 2122081488500493920
+  },
+  "shakeDuration": 0.5,
+  "customAnimator": {
+    "m_FileID": 0,
+    "m_PathID": 1251805458090578257
+  }
+}
