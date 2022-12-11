@@ -17,30 +17,20 @@ public class PlayerSide : MonoBehaviour
 
     private float xx;
     private float yy;
-    private Rigidbody rig;
-    private void Awake()
-    {
-        rig = GetComponent<Rigidbody>();
-    }
-    private void FixedUpdate()
-    {
-        rig.velocity = new Vector3(xx * 10 * Time.deltaTime, rig.velocity.y, yy * 10 * Time.deltaTime);
-    }
-
 
     void Update()
-    {
-        transform.parent.position = transform.position;
+    {        
         xx = Input.GetAxisRaw("Horizontal");
         yy = Input.GetAxisRaw("Vertical");
-        if (xx==0f)
+
+        if (!yy.Equals(0f)||!xx.Equals(0f))
         {
-            _AnimState = AnimState.Idle;
+            _AnimState = AnimState.Walk;
+            if(!xx.Equals(0f)) transform.localScale = new Vector3(xx, 1, 1);
         }
         else
         {
-            _AnimState = AnimState.Walk;
-            transform.localScale = new Vector3(xx, 1,1);
+            _AnimState = AnimState.Idle;
         }
 
         //애니메이션

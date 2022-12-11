@@ -14,22 +14,13 @@ public class PlayerBack : MonoBehaviour
     }
     private AnimState _AnimState;
     private string CurrentAnimation;
-    private Rigidbody rig;
-    private void Awake()
-    {
-        rig = GetComponent<Rigidbody>();
-    }
-    private void FixedUpdate()
-    {
-        rig.velocity = new Vector3(rig.velocity.x, rig.velocity.y, xx * 5 * Time.deltaTime);
-    }
+    
 
 
     private float xx;
     
     void Update()
-    {
-        transform.parent.position = transform.position;
+    {        
         xx = Input.GetAxisRaw("Vertical");
         if (xx==0f)
         {

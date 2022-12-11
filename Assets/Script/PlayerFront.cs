@@ -16,18 +16,10 @@ public class PlayerFront : MonoBehaviour
     private string CurrentAnimation;       
     private float xx;
     private float yy;
-    private Rigidbody rig;
-    private void Awake()
-    {
-        rig = GetComponent<Rigidbody>();
-    }
-    private void FixedUpdate()
-    {
-        rig.velocity = new Vector3(xx * 5 * Time.deltaTime, rig.velocity.y, yy * 5 * Time.deltaTime);
-    }
+    
+    
     void Update()
-    {
-        transform.parent.position = transform.position;
+    {        
         xx = Input.GetAxisRaw("Horizontal");
         yy = Input.GetAxisRaw("Vertical");
         if (yy==0f)

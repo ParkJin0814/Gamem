@@ -40504,11 +40504,11 @@ TextureImporter:
       frost_comet_staff: -418204639554207051
       cwp_eugene: 1967743162868162713
       cwp_uptownlancergirl2: -5369365864433143125
-      fury_gauntlet: 229595451101130496
-      gold_ore: -3390386097066786020
-      ocean_earring_accessory: 6015947788060861712
       purify_sword: -8844909377761642449
+      gold_ore: -3390386097066786020
       skull_bomb: 4900717266422863734
+      ocean_earring_accessory: 6015947788060861712
+      fury_gauntlet: 229595451101130496
       violet_claw: 5686542495597704476
       mall_wig: -2047174535675533489
       open_umbrella_blue: -1906143876108392605
@@ -40517,9 +40517,9 @@ TextureImporter:
       watermelon: -8661332600587486721
       cwp_leaffairy: 4730543357597133054
       blade_shield: 66022843270948795
-      mall_cat_bank: 1355792711935993715
       xm_gift_2: 5060993712452219167
       mall_portune_cookie: 5629257779837679347
+      mall_cat_bank: 1355792711935993715
       orb_movie_extra: -8452735815046585862
       weapon_princess: -8390601450343353811
       broken_healing_potion: -6923532409079408047
@@ -40633,9 +40633,9 @@ TextureImporter:
       evolve_stone_sea_witch: -8114992181851462884
       coffeecarrier_basket: 4604685624865843351
       awakeningStone_legend: -9035040752817695936
-      guardian_claw: -1252653188397927308
-      light_bar: 1896678572173828959
       video_tape: -8808254129969196348
+      light_bar: 1896678572173828959
+      guardian_claw: -1252653188397927308
       frost_drop_bow: 1329748777060641639
       refugee_load_a: 2713891366653776994
       blade_claw: -808213981134047563
@@ -40701,7 +40701,6 @@ TextureImporter:
       mall_greenonion: 3318652530543765952
       evolve_stone_box_unique_elemental: 6346211099190781683
       head_for_quest: -3419600535556530127
-      mall_laser_turret: 3611698860510740811
       orb_incubus: -3251604780507796536
       brilliance_twohand_sword: -1829648022850072273
       orb_sky_slime: 4839073066744772393
@@ -40712,6 +40711,7 @@ TextureImporter:
       evil_spirit_bow: -6808296670221167805
       ice_moon_staff: 1381344316613164605
       relic_box_normal_to_unique: -1241850646814295040
+      mall_laser_turret: 3611698860510740811
       mall_guitar_case: -9007700704371861008
       tactical_knife_sword: 2933178015536286172
       cwp_steamknight: 4824958533255010990
@@ -40969,9 +40969,9 @@ TextureImporter:
       ammi_head_blue: 7072111799500193722
       merch_iron_teatan: -2153908041877581076
       evolve_stone_mecha_android: -7532870050845533024
+      mall_monocle_white: 8407510057264024338
       bag_student_b: -3125710908084598151
       mall_comb: -6371941588499323292
-      mall_monocle_white: 8407510057264024338
       wing_of_terror_bow: -4483915813573481925
       ic_gacha_coin: 2971780745146665013
       dusk_ring_accessory: 2127774270723121234
@@ -41004,51 +41004,51 @@ TextureImporter:
       armor_piece: 1373057186811216550
       ic_mileage: 2642176353171388826
       snowman_general_log: -8723837609908464977
-      cwp_knight: -1679869969426411717
       stardust_gauntlet: 4912710198060349110
+      cwp_knight: -1679869969426411717
       evolve_stone_festival_girl: -1820918712595645163
       bari_myosoti_portrait: -2871879129259842901
       mall_buff_sharpshooter: -1568301841269326001
       bbqgrill_basket: -7734593304117735707
       building_farm_craft_table: 5418059663012056145
-      ds_porkchop: 8452864287584123894
-      paper_bag: -7575180249756078920
-      trophy_basket: -5065994370549084537
-      silkhat_nest: -2503126012150387800
       twohandsword_paint_saw: 7566708814043326224
+      trophy_basket: -5065994370549084537
+      ds_porkchop: 8452864287584123894
+      silkhat_nest: -2503126012150387800
+      paper_bag: -7575180249756078920
       blue_mushroom: 927596046643516236
       twohandsword_light_saber: -6114740353475798360
       twohandsword_gaav: 5560298028878580034
       purple_coin_15: -8733525487269077510
       patience_earring_accessory: 4178985847685754936
       handkerchief: 5093272159859691336
+      stamina: -5690287190882879570
       freezing_bow: -1319715395934221834
       boss_balock_ignition: -3889219445736932730
       old_katana_piece_4: -602415914801102903
       mall_buff_curse_collector: 1793381705440996742
       cwp_surfersohee: 1221461354337295777
-      cwp_demonslayer: 3272219492395113213
-      stamina: -5690287190882879570
       thunder_claw: -2083367265623105691
+      cwp_demonslayer: 3272219492395113213
       mall_vip_card: -1162709464269964140
       glass_cup_filled_90: 4396079691154372551
-      electric_saw_sword: 4467375786911231477
+      mall_buff_power_boost: 6799806604427940880
       laser_cannon: -3089541972722720309
       act_slab1: 1373161540936270979
       innovation_fist_gauntlet: -4994831030798506810
       black_thorn_twohand_sword: 5262621377977729851
       bow_shooting_star_bow: 2090886154226858519
-      orb_goblin_blue_knight: -2876285368802641656
+      electric_saw_sword: 4467375786911231477
       beach_flag: 7507538183570653613
       cwp_maid: 1042777657079572336
-      mall_buff_power_boost: 6799806604427940880
-      orb_happy_snowman: 5625726978977673753
+      orb_goblin_blue_knight: -2876285368802641656
       sand_castle_fallen_green_flag: -8202392399678774696
       black_spider_staff: -2202484087406426591
       stinger_cannon: 349636403240198340
       expedition_devil_stomach: 942344792608868059
       orb_adventurer_chris: 2140562406349705313
       orb_ghost_guard_female: -4094326785982010848
+      orb_happy_snowman: 5625726978977673753
       mall_silvercoin: 7093312545530493932
       metal_box: 8303566483870614378
       rail_bow: -2373139742218536780
@@ -41343,12 +41343,12 @@ TextureImporter:
       blackstarlight_bow: -2028314423103427423
       saint_shield: 7419235865335557644
       black_umbrella: -3754019907163098425
+      gauntlet_moringstar: 4197797282191953648
       compound_bow: -339831794931588597
       fire_hatchling_basket: 6203929408254131869
-      gauntlet_moringstar: 4197797282191953648
-      ds_nails: -1036104941349766866
-      mall_locket: -1801649535404916279
       robot_warrior_figure: 8498798236278438354
+      mall_locket: -1801649535404916279
+      ds_nails: -1036104941349766866
       cwp_eighttail: 552970774162231038
       evolve_stone_parvati: 1898277167557507974
       cwp_madscientist: -6976012882410908059
@@ -41430,17 +41430,17 @@ TextureImporter:
       building_farm_house_lv3: 5665078010022550240
       elphaba_shield: -7626986501072245214
       basic_sword: 6732848937024681036
-      building_farm_forge: -869003087251479966
-      building_farm_store_house: -2666476879609913989
       cut_carrot: 7318330024496104576
-      black_leather_gauntlet: -8151637309149633068
+      building_farm_forge: -869003087251479966
       dead_cube: 1931183932381682315
-      red_scale: -5019802047114986130
+      black_leather_gauntlet: -8151637309149633068
+      building_farm_store_house: -2666476879609913989
       bow_crossbow: 388955918289514141
       ic_blueprint_cd: -2064633520386677322
       sand_castle_green_flag: -1856408930234394513
       heavy_platter: 1430159728221346214
       succubus_picket: -1556771328013216267
+      red_scale: -5019802047114986130
       evolve_stone_china_hero_boy: 245405533614658814
       feather_of_sun_bow: -6673150544902145378
       orb_future_princess_smile: 9159469914955928804
@@ -41479,8 +41479,8 @@ TextureImporter:
       assassination_gauntlet: -2507918963489898805
       orb_onigirl_racing_demonworld: 4282136579827158933
       evolve_stone_witch_coco: -4204187643801551161
-      orb_pirate: 7416401558626623480
       oven_basket: 8820769325078036122
+      orb_pirate: 7416401558626623480
       gear: -1762156721356421273
       evolve_stone_surfer_sohee: -6105027209810229955
       shield_beer_full_2: 6191900476372153214
@@ -41496,8 +41496,8 @@ TextureImporter:
       evolve_stone_maid: -9128278607460879726
       broken_worker_a_head_back: -978547624793169938
       dark_dragon_claw_gauntlet: 4656499622762239469
-      judgement_rifle: 7571313554897702025
       tanker_helm: -8003095972121199108
+      judgement_rifle: 7571313554897702025
       flame_dragon_claw_gauntlet: 1694352507716307769
       orb_teatan_old: 6433134754999056312
       evolve_stone_necromancer: 8987913998981344297
@@ -41585,13 +41585,13 @@ TextureImporter:
       bar_drink_kahluamilk_2: -2536847582052070342
       merch_cecil_musicbox: 4557991037673300967
       evolve_stone_librarian: -7367612316981357696
-      banshee_scream_bow: -5310178739937764633
+      pirate_bandana: 7147345782141638524
       cwp_innuit: 865183410023934155
       mall_mask_berserker: 31843092594439400
+      banshee_scream_bow: -5310178739937764633
       doublebarrel: 635193560480043141
       ic_card_fast_winding_03: 7899117518304819048
       earth_tooth_sword: 2916317578883296477
-      pirate_bandana: 7147345782141638524
       guild_gift_2: -3990580144236645505
       orb_futurecastle_devil_warrior: -3917272285527260923
       orb_onigirl_awesome: 103209714744443518
@@ -41605,19 +41605,19 @@ TextureImporter:
       arondight_twohand_sword: -5141442075807427746
       evolve_stone_eugene: 2067489513393259841
       shield_police_shield: -8088756789238544783
+      bomb_basket: 3458125204083649341
       bbobbi_claw: 8633620152824320334
       orb_desertelf_sheriff: -5665625676730612403
-      bomb_basket: 3458125204083649341
-      building_farm_house_lv1: -1284652084321344712
       mall_walkie_talkie: -892271759690131080
-      broken_worker_a_head_front: -2725727430524248256
+      building_farm_house_lv1: -1284652084321344712
       shiningstar_necklace_accessory: -1551263805051836611
+      broken_worker_a_head_front: -2725727430524248256
+      stagbeetle_claw: 7342038543989140986
       molten_bow: 6923482619178004010
       demonking_gauntlet: 3538095227544244051
       drink_martini: -8963913599640463220
       galaxy_twohand_sword: -1306014894846966660
       bubblegum_basket: -2440398956431418582
-      stagbeetle_claw: 7342038543989140986
       sunshine_staff: -8292453439909099689
       basket_gatcha_box: -2271208626357388902
       mall_fartcushion: 119846251044186559
@@ -41630,20 +41630,20 @@ TextureImporter:
       turbo_power_rifle: -611674256968128376
       orb_movie_onigirl: 1020504490069790170
       beast_cage_basket: -1086983065757704447
-      frostnova_sword: -1014467110775649497
+      mall_whisker: -6298004182480659010
       bless_bow: -5219688838229572053
       automatic_claw: 3399933623557273622
       evolve_stone_knight_female: 973975918724701529
-      gear_sword: 2250685292078586263
-      leon_shield: -146150212641743275
-      mall_whisker: -6298004182480659010
-      mall_phone_chart: -3866903467178886507
-      santa_hat: 5414829630782595374
-      cwp_flowergirl: 2580931500900125111
       mall_cocoon: -4617035561298195638
+      santa_hat: 5414829630782595374
+      leon_shield: -146150212641743275
+      mall_phone_chart: -3866903467178886507
       wine_bottle_2: -9067767639428271578
+      cwp_flowergirl: 2580931500900125111
+      gear_sword: 2250685292078586263
       artifact_glide: 3610722316831514758
       ion_cannon_rifle: 156795161999518029
+      frostnova_sword: -1014467110775649497
       red_gem: -5439864342987872355
       evolve_stone_saintess: -6964780721096768655
       mall_harmonica: 8105745456221986460
@@ -41654,11 +41654,11 @@ TextureImporter:
       event_roadmap_ic_point: -8559714371278091310
       mk2_beam_saber: -4073169884443312305
       bari_edelweiss: 7454766350371810816
-      fakeguardian_bow: 8264178210348646804
+      xmas_build_bed: 7773483966877801093
       old_katana: -5718480114764632701
       mall_heel: 6010124788756556267
       merch_streamer_deskmat: 8971834153822437060
-      xmas_build_bed: 7773483966877801093
+      fakeguardian_bow: 8264178210348646804
       cwp_pet: 3414449754291212836
       building_farm_slime_pool: 235823720538176302
       mall_buff_increased_resilience: 5807537306103838771
@@ -41668,23 +41668,22 @@ TextureImporter:
       evolve_stone_china: -1816936247730890688
       battle_medal: 3365127613950087271
       mall_cardboard_box: 1125873313744870683
-      mall_wallet_chris: -7709362351143482226
       orb_teatan_fighter_a: 2611267593791111097
+      mall_wallet_chris: -7709362351143482226
       foxfire_staff: 6051965072976782773
-      romance_staff: -701413128030701425
       cwp_akayuki: 6955842255234843995
-      snowsoldier_shield: -6572824601045088180
+      romance_staff: -701413128030701425
       cwp_legendaryhero: -8253295887114570668
       purple_coin_4: -209855214322506762
       basic_basket: 1076675806796278130
       fakeguardian_twohandsword: -6045600304712690228
       succubus_membership: -1189975106679634205
       assassin_dagger: 8265404025815760360
-      card_student: 8718738497732138463
-      dawn_sword: 7069448162516216303
-      empty_dish: 6813799115102669242
       evolve_stone_box_unique_ice: 1648258176677038726
+      dawn_sword: 7069448162516216303
+      card_student: 8718738497732138463
       sun_ring_accessory: 1896733183689740919
+      empty_dish: 6813799115102669242
       menu_restaurant: -2819204727146521546
       mall_chicken_toy: 6433719465438463219
       flyers_restaurant: 6474744855763158693
@@ -41693,6 +41692,7 @@ TextureImporter:
       loraine_flower_pot: -2768336588458858052
       black_lion_fang_claw: 7447957933779569830
       devilfist_gauntlet: 1466914522414526717
+      snowsoldier_shield: -6572824601045088180
       mall_safe: -190239640422243511
       lionscanine_twohand_sword: -1095929975654270621
       evil_spirit_claw: -2063696100994985791
@@ -41700,9 +41700,9 @@ TextureImporter:
       glory_shield: 4742385313366675012
       pinecone_basket: -526538356652216114
       evolve_stone_plitvice: -8968509438008561137
+      sand_castle_red_flag: 5852328924483650528
       mall_glass: 740219118577357995
       dead_list: -1239691770901545513
-      sand_castle_red_flag: 5852328924483650528
       sabertooth_claw: 5125071553932049744
       electric_saw_twohand_sword: -3570108449276928363
       cyborg_claw: 6367952286694404450

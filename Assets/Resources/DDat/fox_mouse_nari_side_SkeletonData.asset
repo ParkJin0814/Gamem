@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1b3b4b945939a54ea0b23d3396115fb, type: 3}
+  m_Name: fox_mouse_nari_side_SkeletonData
+  m_EditorClassIdentifier: 
+  atlasAssets:
+  - {fileID: 11400000, guid: 289b12b7301ef5d4cb3915bc6fcf9c03, type: 2}
+  - {fileID: 11400000, guid: 6e5cba9abbd4c8a4c9e94143babf56e5, type: 2}
+  scale: 0.01
+  skeletonJSON: {fileID: 4900000, guid: 9d0baf4b8db4d174db40102bafaeb08d, type: 3}
+  skeletonDataModifiers: []
+  fromAnimation: []
+  toAnimation: []
+  duration: []
+  defaultMix: 0.2
+  controller: {fileID: 9100000, guid: df57c997fb3662a4795481c5a9d9a1c5, type: 2}
