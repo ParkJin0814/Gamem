@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3086198333597775618}
   - component: {fileID: 1369741868202988527}
   - component: {fileID: 1926001552422206965}
+  - component: {fileID: 2615723437359158134}
   m_Layer: 0
   m_Name: keydoor2
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2615723437359158134
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389126987616842689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3449251235886228643, guid: 41ba6b11976bb5046a7e8ef14783d393, type: 3}
 --- !u!1 &1504393038646386311
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,7 +405,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8794811350406590041}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 41ba6b11976bb5046a7e8ef14783d393, type: 3}
   m_Controller: {fileID: 9100000, guid: 653ba7232741b534f9e24f48b526daf6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
