@@ -11,7 +11,8 @@ public class Player : MonoBehaviour
     float x;
     float y;
     private Rigidbody rig;
-
+    public bool Attacking = false;
+    public bool Running = false;
     public enum PlayerViewCheck
     { 
         Side, Back, Front
@@ -42,7 +43,12 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        rig.velocity = new Vector3(x * PlayerSpeed * Time.deltaTime, rig.velocity.y, y * PlayerSpeed * Time.deltaTime);
+        float a = Running? 1.5f:1.0f;
+
+        if (!Attacking)
+        {
+            rig.velocity = new Vector3(x * PlayerSpeed * a * Time.deltaTime, rig.velocity.y, y * PlayerSpeed * a * Time.deltaTime);
+        }
     }
     void Update()
     {

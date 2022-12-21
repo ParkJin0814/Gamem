@@ -9,18 +9,23 @@ public class CharaterMovement : MonoBehaviour
 
     public enum AnimState
     {
-        Idle, Walk, Attack
+        Idle, Walk, Attack, Run
     }
     protected AnimState _AnimState;
-    protected string CurrentAnimation;
-
+    //재생되고있는 애니메이션이름
+    protected string CurrentAnimation;    
+    //애니메이션 체크를위한 x y값
     protected float xx;
-    protected float yy;
-
+    protected float yy;    
+    protected bool _IsSide = false;
+    //달리는지 체크
+    public bool isRunning = false;
+    //공격중인지 체크
     public bool isAttacking = false;
     void Update()
     {
-        
+        GetComponentInParent<Player>().Attacking=isAttacking;
+        GetComponentInParent<Player>().Running = isRunning;
         if (!isAttacking)
         {
             Movement();
@@ -30,11 +35,14 @@ public class CharaterMovement : MonoBehaviour
             if (!AnimClip[(int)AnimState.Attack].Equals(CurrentAnimation)) isAttacking = false;
         }
         if (Input.GetKey(KeyCode.Z)) Attack();
+        if(Input.GetKey(KeyCode.X)) isRunning= true;
+        else isRunning= false;
     }
     protected void Attack()
     {
         isAttacking= true;
         _AnimState = AnimState.Attack;
+        if (!xx.Equals(0f)&&_IsSide) transform.localScale = new Vector3(xx, 1, 1);
         SetCurrentAnimation(_AnimState);
     }
     protected virtual void Movement()
@@ -63,27 +71,13 @@ public class CharaterMovement : MonoBehaviour
 
         skeletonAnimation.AnimationState.SetAnimation(0, animClip, loop).TimeScale = timeScale;
         skeletonAnimation.loop = loop;
-        skeletonAnimation.timeScale = timeScale;
-        if (animClip.name.Equals(AnimClip[(int)AnimState.Attack]))
-        {
-            skeletonAnimation.AnimationState.AddAnimation(0, CurrentAnimation, loop,0f);
-        }
+        skeletonAnimation.timeScale = timeScale;        
         //현재 재생되고 있는 애니메이션 이름으로 변경
         CurrentAnimation = animClip.name;
     }
     protected void SetCurrentAnimation(AnimState _state)
     {
-        switch (_state)
-        {
-            case AnimState.Idle:
-                _AsncAnimation(AnimClip[(int)AnimState.Idle], true);
-                break;
-            case AnimState.Walk:
-                _AsncAnimation(AnimClip[(int)AnimState.Walk], true);
-                break;
-            case AnimState.Attack:
-                _AsncAnimation(AnimClip[(int)AnimState.Attack], true);
-                break;
-        }
+        _AsncAnimation(AnimClip[(int)_state], true);        
     }
+
 }

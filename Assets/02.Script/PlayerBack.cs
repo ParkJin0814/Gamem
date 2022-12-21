@@ -15,7 +15,8 @@ public class PlayerBack : CharaterMovement
         }
         else
         {
-            _AnimState = AnimState.Walk;
+            if (!isRunning) _AnimState = AnimState.Walk;
+            else _AnimState = AnimState.Run;
         }
 
         //애니메이션
