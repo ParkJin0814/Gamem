@@ -13,7 +13,7 @@ public class CharaterMovement : MonoBehaviour
     }
     protected AnimState _AnimState;
     //재생되고있는 애니메이션이름
-    protected string CurrentAnimation;    
+    protected string CurrentAnimation;
     //애니메이션 체크를위한 x y값
     protected float xx;
     protected float yy;    
@@ -26,10 +26,7 @@ public class CharaterMovement : MonoBehaviour
     {
         GetComponentInParent<Player>().Attacking=isAttacking;
         GetComponentInParent<Player>().Running = isRunning;
-        if (!isAttacking)
-        {
-            Movement();
-        }
+        if (!isAttacking) Movement();        
         else
         {
             if (!AnimClip[(int)AnimState.Attack].Equals(CurrentAnimation)) isAttacking = false;
@@ -39,10 +36,14 @@ public class CharaterMovement : MonoBehaviour
         else isRunning= false;
     }
     protected void Attack()
-    {
-        isAttacking= true;
+    {        
+        isAttacking = true;
         _AnimState = AnimState.Attack;
-        if (!xx.Equals(0f)&&_IsSide) transform.localScale = new Vector3(xx, 1, 1);
+        xx = Input.GetAxisRaw("Horizontal");
+        if (!xx.Equals(0f) && _IsSide)
+        {            
+            transform.localScale = new Vector3(xx, 1, 1);
+        }
         SetCurrentAnimation(_AnimState);
     }
     protected virtual void Movement()
@@ -65,11 +66,9 @@ public class CharaterMovement : MonoBehaviour
     protected void _AsncAnimation(AnimationReferenceAsset animClip, bool loop, float timeScale = 1.0f)
     {
         // 동일한 애니메이션은 리턴
-        if (animClip.name.Equals(CurrentAnimation))
-            return;
+        if (animClip.name.Equals(CurrentAnimation)) return;
         //해당애니메이션으로 실행
-
-        skeletonAnimation.AnimationState.SetAnimation(0, animClip, loop).TimeScale = timeScale;
+        skeletonAnimation.AnimationState.SetAnimation(0, animClip, loop).TimeScale = timeScale;        
         skeletonAnimation.loop = loop;
         skeletonAnimation.timeScale = timeScale;        
         //현재 재생되고 있는 애니메이션 이름으로 변경
@@ -79,5 +78,4 @@ public class CharaterMovement : MonoBehaviour
     {
         _AsncAnimation(AnimClip[(int)_state], true);        
     }
-
 }

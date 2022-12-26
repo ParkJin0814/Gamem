@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Player : MonoBehaviour
 {
-    public float PlayerSpeed=50.0f;
+    public float PlayerSpeed;
     public GameObject[] PlayerView; //0 side 1 back 2 front
     float x;
     float y;
@@ -18,7 +19,6 @@ public class Player : MonoBehaviour
         Side, Back, Front
     }
     PlayerViewCheck _playerViewCheck=PlayerViewCheck.Side;
-
     void ChangeState(PlayerViewCheck s)
     {
         if(_playerViewCheck==s) return;
@@ -43,18 +43,24 @@ public class Player : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        float a = Running? 1.5f:1.0f;
+        /*float a = Running? 1.5f:1.0f;
 
         if (!Attacking)
         {
             rig.velocity = new Vector3(x * PlayerSpeed * a * Time.deltaTime, rig.velocity.y, y * PlayerSpeed * a * Time.deltaTime);
-        }
+        }*/
     }
     void Update()
     {
         x = Input.GetAxisRaw("Horizontal");
         y = Input.GetAxisRaw("Vertical");
-        if(y>0.0f)
+        Vector3 pos = transform.position;
+        pos.x += x;
+        pos.z += y;
+        float delta = PlayerSpeed * Time.deltaTime;
+        Vector3 dir = pos - transform.position;
+        transform.Translate(dir * delta, Space.World);
+        if (y>0.0f)
         {
             ChangeState(PlayerViewCheck.Back);
         }

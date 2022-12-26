@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840764249129346}
   - component: {fileID: 8293840764249129347}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Untitled-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840764368298702}
   - component: {fileID: 8293840764368298703}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sword (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840764389478165}
   - component: {fileID: 8293840764389478166}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shield (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,7 +162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840764389478164}
   m_LocalRotation: {x: 0.14644662, y: 0.35355344, z: -0.85355335, w: 0.3535534}
-  m_LocalPosition: {x: -0.07999999, y: 0.09899497, z: 0.09899473}
+  m_LocalPosition: {x: -0.07999999, y: 0.29899502, z: -0.1010046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 8293840764533684399}
   - component: {fileID: 8293840764533684398}
   - component: {fileID: 8293840764533684397}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerDDat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840764642591713}
   - component: {fileID: 8293840764642591714}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sword (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840764818651060}
   - component: {fileID: 8293840764818651061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: captain_mirror_shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 8293840764821514905}
   - component: {fileID: 8293840764821514904}
   - component: {fileID: 8293840764821514887}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spine GameObject (fox_mouse_nari_front)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840764821514886}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0.2, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0.25, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 8293840764948003372}
   - component: {fileID: 8293840764948003371}
   - component: {fileID: 8293840764948003370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spine GameObject (fox_mouse_nari_back)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840764948003369}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0.2, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0.25, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -667,7 +667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840765313371563}
   - component: {fileID: 8293840765313371562}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -722,7 +722,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840765515275312}
   - component: {fileID: 8293840765515275313}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -737,7 +737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840765515275327}
   m_LocalRotation: {x: 0.19134171, y: 0.3314136, z: -0.8001032, w: 0.46193972}
-  m_LocalPosition: {x: -0.044999994, y: 0.2954594, z: -0.104540825}
+  m_LocalPosition: {x: -0.044999994, y: 0.34545946, z: -0.15454102}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -775,7 +775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840765801467937}
   - component: {fileID: 8293840765801467938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Untitled-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840765838083630}
   - component: {fileID: 8293840765838083631}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shield (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840765938386849}
   - component: {fileID: 8293840765938386850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,7 +927,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840765938386848}
   m_LocalRotation: {x: 0.3535534, y: -0.1464466, z: 0.35355332, w: 0.8535534}
-  m_LocalPosition: {x: 0.1081823, y: 0.24188113, z: -0.1581192}
+  m_LocalPosition: {x: 0.1081823, y: 0.29188108, z: -0.20811844}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -965,7 +965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840765982482425}
   - component: {fileID: 8293840765982482426}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: captain_mirror_shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840766061909646}
   - component: {fileID: 8293840766061909645}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerFront
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 8293840766079839382}
   - component: {fileID: 8293840766079839381}
   - component: {fileID: 8293840766079839380}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Spine GameObject (fox_mouse_nari_side)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1121,7 +1121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840766079839379}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0.2, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0.25, z: -0.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 8293840766080105717}
   - component: {fileID: 8293840766080105719}
   - component: {fileID: 8293840766080105718}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1242,7 +1242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840766080105716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.2, z: -0.2}
+  m_LocalPosition: {x: 0, y: 0.25, z: -0.25}
   m_LocalScale: {x: 0.2, y: 0.001, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1265,7 +1265,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8293840766080105716}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -1309,7 +1309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840766191822560}
   - component: {fileID: 8293840766191822575}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerSide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1364,7 +1364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840766297818231}
   - component: {fileID: 8293840766297818184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Untitled-4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1448,7 +1448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8293840766381819041}
   - component: {fileID: 8293840766381819042}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: captain_mirror_shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
