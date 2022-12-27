@@ -3,17 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
 
 public class Player : MonoBehaviour
 {
     public float PlayerSpeed;
-    public GameObject[] PlayerView; //0 side 1 back 2 front
-    float x;
-    float y;
-    private Rigidbody rig;
-    public bool Attacking = false;
-    public bool Running = false;
+    //0 side 1 back 2 front      
+    public GameObject[] PlayerView;
+    public bool IsAttacking;
     public enum PlayerViewCheck
     { 
         Side, Back, Front
@@ -34,47 +30,36 @@ public class Player : MonoBehaviour
             case PlayerViewCheck.Front:
                 PlayerViewChange(2);
                 break;
-
         }
-    }
-    private void Awake()
-    {
-        rig = GetComponent<Rigidbody>();
-    }
-    private void FixedUpdate()
-    {
-        /*float a = Running? 1.5f:1.0f;
-
-        if (!Attacking)
-        {
-            rig.velocity = new Vector3(x * PlayerSpeed * a * Time.deltaTime, rig.velocity.y, y * PlayerSpeed * a * Time.deltaTime);
-        }*/
-    }
+    }     
     void Update()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
+        if(!IsAttacking)myMovement();
+    }
+    void myMovement()
+    {
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
         Vector3 pos = transform.position;
         pos.x += x;
         pos.z += y;
         float delta = PlayerSpeed * Time.deltaTime;
         Vector3 dir = pos - transform.position;
         transform.Translate(dir * delta, Space.World);
-        if (y>0.0f)
+        if (y > 0.0f)
         {
             ChangeState(PlayerViewCheck.Back);
         }
         else
         {
-            if(!x.Equals(0.0f))
+            if (!x.Equals(0.0f))
             {
                 ChangeState(PlayerViewCheck.Side);
             }
-            else if(y<0.0f)
+            else if (y < 0.0f)
             {
                 ChangeState(PlayerViewCheck.Front);
             }
-
         }
     }
     void PlayerViewChange(int a)
