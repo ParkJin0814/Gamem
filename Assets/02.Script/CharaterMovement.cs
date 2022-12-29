@@ -6,8 +6,7 @@ public class CharaterMovement : MonoBehaviour
 {
     float x;
     float y;
-    Animator myAnimator;
-    public bool myViewSide = false;
+    Animator myAnimator;    
     Player myPlayer;
     void Start()
     {
@@ -21,14 +20,10 @@ public class CharaterMovement : MonoBehaviour
     }
     void Movement()
     {
-        x = Input.GetAxisRaw("Horizontal");
-        y = Input.GetAxisRaw("Vertical");
+        x = myPlayer.x;
+        y = myPlayer.y;
         if (x != 0 || y != 0)
         {
-            if(x!=0&& myViewSide)
-            {
-                transform.parent.localScale=new Vector3(x,1,1);
-            }
             myAnimator.SetBool("IsWalk", true);
         }
         else

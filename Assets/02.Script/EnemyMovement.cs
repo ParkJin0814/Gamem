@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
     }
     private void Update()
     {
+        myEnemyCharater.IsAttacking = myAnimator.GetBool("IsAttacking");
         myAnimator.SetBool("IsWalk", myEnemyCharater.IsWalk);
         myAnimator.SetBool("IsAttack", myEnemyCharater.IsAttack);
     }

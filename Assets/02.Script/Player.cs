@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     //0 side 1 back 2 front      
     public GameObject[] PlayerView;
     public bool IsAttacking;
+    public float x;
+    public float y;
     public enum PlayerViewCheck
     { 
         Side, Back, Front
@@ -25,9 +27,11 @@ public class Player : MonoBehaviour
                 PlayerViewChange(0);
                 break;
             case PlayerViewCheck.Back:
+                transform.localScale = new Vector3(1, 1, 1);
                 PlayerViewChange(1);
                 break;
             case PlayerViewCheck.Front:
+                transform.localScale = new Vector3(1, 1, 1);
                 PlayerViewChange(2);
                 break;
         }
@@ -38,15 +42,17 @@ public class Player : MonoBehaviour
     }
     void myMovement()
     {
-        float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
+        //float x = Input.GetAxisRaw("Horizontal");
+        //float y = Input.GetAxisRaw("Vertical");
+        
         Vector3 pos = transform.position;
         pos.x += x;
         pos.z += y;
         float delta = PlayerSpeed * Time.deltaTime;
         Vector3 dir = pos - transform.position;
+        dir.Normalize();
         transform.Translate(dir * delta, Space.World);
-        if (y > 0.0f)
+        if ((int)y > 0.0f)
         {
             ChangeState(PlayerViewCheck.Back);
         }
@@ -54,10 +60,11 @@ public class Player : MonoBehaviour
         {
             if (!x.Equals(0.0f))
             {
+                PlayerView[0].transform.localScale = new Vector3(x, 1, 1);
                 ChangeState(PlayerViewCheck.Side);
             }
             else if (y < 0.0f)
-            {
+            {                
                 ChangeState(PlayerViewCheck.Front);
             }
         }

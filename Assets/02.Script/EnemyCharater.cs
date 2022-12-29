@@ -12,7 +12,8 @@ public class EnemyCharater : MonoBehaviour
     Coroutine Attackco = null;
     public float myAttackRange;
     public bool IsWalk = false;
-    public bool IsAttack = false;    
+    public bool IsAttack = false;
+    public bool IsAttacking = false;
     public enum ViewCheck
     {
         Side, Back, Front
@@ -40,6 +41,11 @@ public class EnemyCharater : MonoBehaviour
     void Update()
     {
 
+        if(!IsAttacking)Movement();
+
+    }
+    void Movement()
+    {
         if (myTarget != null && Attackco == null)
         {
             Attackco = StartCoroutine(AttckingTarget(myTarget.transform, myAttackRange));
@@ -51,16 +57,24 @@ public class EnemyCharater : MonoBehaviour
         }
         if (Mathf.Abs(y) > Mathf.Abs(x))
         {
-            if (y > 0.0f) ChangeState(ViewCheck.Back);
-            else ChangeState(ViewCheck.Front);
+            if (y > 0.0f)
+            {
+                ChangeState(ViewCheck.Back);
+            }
+            else
+            {
+                ChangeState(ViewCheck.Front);
+            }
         }
         else
         {
             ChangeState(ViewCheck.Side);
-            if (x < 0.0f) transform.localScale = new Vector3(-1, 1, 1);
-            else transform.localScale = new Vector3(1, 1, 1);
+            if (myView[0].activeSelf)
+            {
+                if (x < 0.0f) myView[0].transform.localScale = new Vector3(-1, 1, 1);
+                else myView[0].transform.localScale = new Vector3(1, 1, 1);
+            }
         }
-
     }
     void MyViewChange(int a)
     {
@@ -90,7 +104,7 @@ public class EnemyCharater : MonoBehaviour
                 {
                     delta = dist;
                 }
-                transform.Translate(dir * delta, Space.World);
+                if(!IsAttacking)transform.Translate(dir * delta, Space.World);
             }
             else
             {
